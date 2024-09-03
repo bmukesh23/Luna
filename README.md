@@ -1,7 +1,12 @@
+## 🛒 Luna
+A Mini E-commerce website, designed for simplicity and efficiency. Explore a curated selection of products, manage your cart effortlessly, and enjoy a user-friendly interface that makes online shopping a breeze.
+
 ## 📦 Technologies
 - `NextJS`
 - `TypeScript`
 - `Supabase`
+- `Prisma`
+- `Tailwind CSS`
 
 ## 🚦 Running the Project
 First, run the development server:
