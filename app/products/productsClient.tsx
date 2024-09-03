@@ -1,4 +1,3 @@
-// app/products/page.tsx
 'use client';
 import { useState } from 'react';
 import { Product } from "@/utils/types";
