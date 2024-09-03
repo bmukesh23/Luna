@@ -66,11 +66,11 @@ const CartClient = ({ carts: initialCarts }: { carts: Cart[] }) => {
   return (
     <div>
       {carts.length === 0 ? (
-        <p className='text-slate-500 font-semibold text-center'>Your cart is empty! Add items to the cart to see your items here.</p>
+        <p className='text-sm md:text-base px-4 md:px-0 text-slate-500 font-semibold text-center'>Your cart is empty! Add items to the cart to see your items here.</p>
       ) : (
-        <ul className="flex flex-col items-center justify-center gap-4">
+        <ul className="flex flex-col items-center justify-center gap-4 pb-10 md:pb-0">
           {carts.map((cart) => (
-            <li key={cart.id} className='flex items-center justify-between gap-6 border border-slate-600 rounded-md p-4'>
+            <li key={cart.id} className='flex flex-col md:flex-row items-center justify-between gap-6 border border-slate-600 rounded-md p-4'>
               <div className="relative w-[200px] h-[150px]">
                 <Image
                   src={cart.product.imageUrl}

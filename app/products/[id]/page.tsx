@@ -18,9 +18,9 @@ const ProductPage = async ({ params }: ProductPageProps) => {
     }
 
     return (
-        <section className='pt-32 px-10 pb-10'>
-            <div className="flex items-center justify-center gap-8">
-                <div className="relative w-[550px] h-[400px]">
+        <section className='pt-20 lg:pt-32 px-10 pb-10'>
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+                <div className="relative w-[250px] md:w-[550px] h-[150px] md:h-[400px]">
                     <Image
                         src={product.imageUrl}
                         alt={product.name}
@@ -29,11 +29,11 @@ const ProductPage = async ({ params }: ProductPageProps) => {
                     />
                 </div>
 
-                <div className='w-[30%]'>
+                <div className='w-full lg:w-[30%]'>
                     <Link href='/products' className='underline'>Go Back</Link>
-                    <h1 className="text-4xl font-bold">{product.name}</h1>
-                    <p className="text-xl mt-4 bg-slate-800 rounded-md w-fit p-1">${product.price}</p>
-                    <p className="text-md text-slate-500 mt-2 text-justify">{product.description}</p>
+                    <h1 className="text-3xl lg:text-4xl font-bold">{product.name}</h1>
+                    <p className="text-md lg:text-xl mt-2 lg:mt-4 bg-slate-800 rounded-md w-fit p-1">${product.price}</p>
+                    <p className="text-sm lg:text-md text-slate-500 mt-2 text-justify">{product.description}</p>
                 </div>
             </div>
         </section>

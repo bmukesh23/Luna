@@ -34,10 +34,10 @@ const ProductsClient = ({ products }: { products: Product[] }) => {
   };
 
   return (
-    <ul className="flex items-center justify-center gap-4 mt-4">
+    <ul className="flex flex-col lg:flex-row items-center justify-center gap-4 mt-4">
       {products.map((product) => (
         <li key={product.id} className="text-center border border-slate-600 rounded-md p-4">
-          <div className="relative w-[400px] h-[250px] mb-4">
+          <div className="relative w-[250px] md:w-[400px] h-[150px] md:h-[250px] mb-4">
             <Image
               src={product.imageUrl}
               alt={product.name}
@@ -48,7 +48,7 @@ const ProductsClient = ({ products }: { products: Product[] }) => {
           <h2 className="font-bold">{product.name}</h2>
           <p className="text-slate-500">${product.price}</p>
 
-          <div className="flex justify-center gap-4 mt-4">
+          <div className="flex justify-center gap-4 mt-4 text-sm md:text-base">
             <button
               className="bg-blue-500 p-2 rounded-md text-black"
               onClick={() => handleAddToCart(product.id)}

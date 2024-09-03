@@ -5,7 +5,7 @@ import logo from "../public/logo.svg";
 const Navbar = () => {
     return (
         <header>
-            <div className="px-10 py-[0.65rem] border-b border-slate-500 flex items-center">
+            <div className="px-4 md:px-10 py-2 md:py-[0.65rem] border-b border-slate-500 flex items-center">
                 <Image
                     src={logo}
                     alt="logo"
